@@ -666,7 +666,7 @@ export default class Blobity {
         Math.abs(width - this.options.size * window.devicePixelRatio) < 10 &&
         Math.abs(height - this.options.size * window.devicePixelRatio) < 10 &&
         Math.abs(radius - (this.options.size * window.devicePixelRatio) / 2) <
-          10;
+        10;
 
       if (activateBlur) {
         const angle = (Math.atan2(velocityY, velocityX) * 180) / Math.PI + 180;
@@ -678,12 +678,12 @@ export default class Blobity {
 
       const cumulativeVelocity = activateBlur
         ? Math.min(
-            Math.sqrt(
-              Math.pow(Math.abs(velocityX), 2) +
-                Math.pow(Math.abs(velocityY), 2)
-            ) * 2, // so the distortion starts sooner
-            60 // shape becomes too distorted once velocity is too big
-          ) / 2
+          Math.sqrt(
+            Math.pow(Math.abs(velocityX), 2) +
+            Math.pow(Math.abs(velocityY), 2)
+          ) * 2, // so the distortion starts sooner
+          60 // shape becomes too distorted once velocity is too big
+        ) / 2
         : 0;
 
       ctx.beginPath();
@@ -732,18 +732,16 @@ export default class Blobity {
 
         this.ctx.textBaseline = "top";
         this.ctx.textAlign = "left";
-        this.ctx.font = `${this.options.fontWeight} ${
-          this.options.fontSize * window.devicePixelRatio * (scale / 100)
-        }px ${this.options.font}`;
+        this.ctx.font = `${this.options.fontWeight} ${this.options.fontSize * window.devicePixelRatio * (scale / 100)}px ${this.options.font}`;
         ctx.fillStyle = `rgba(
                     ${this.fontColor.r}, ${this.fontColor.g}, 
                     ${this.fontColor.b}, ${textOpacity / 100})`;
         ctx.fillText(
           this.activeTooltip,
           this.options.tooltipPadding * window.devicePixelRatio -
-            ((scale - 100) / 100) * width,
+          ((scale - 100) / 100) * width,
           this.options.tooltipPadding * window.devicePixelRatio -
-            ((scale - 100) / 100) * height
+          ((scale - 100) / 100) * height
         );
       }
     }

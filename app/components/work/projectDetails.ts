@@ -1,16 +1,9 @@
 import {
-  SiCplusplus,
   SiExpress,
-  SiFramer,
-  SiGithub,
-  SiNeovim,
   SiNextdotjs,
   SiReact,
-  SiRust,
   SiTailwindcss,
   SiTypescript,
-  SiWebgl,
-  SiZig,
 } from "react-icons/si";
 import { FaFire } from "react-icons/fa";
 import { IconType } from "react-icons";

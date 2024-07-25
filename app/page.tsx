@@ -24,6 +24,11 @@ export default function Home() {
       top: 0,
       left: 0,
     });
+    console.log(
+      "Hello, I'm Deepanshu Goel. I'm a Full Stack Developer.",
+      isMobile
+    );
+
     setIsMobile(window.innerWidth < 768);
   });
 
