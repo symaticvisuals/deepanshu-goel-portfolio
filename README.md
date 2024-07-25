@@ -13,7 +13,7 @@ Minimalist developer portfolio using Next.js 14, React, TailwindCSS, Framer moti
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/karthikmudunuri/portfolio-template
+   git clone https://github.com/symaticvisuals/deepanshu-goel-portfolio
    ```
 
 2. Move to the cloned directory
