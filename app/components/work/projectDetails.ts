@@ -1,6 +1,7 @@
 import {
   SiExpress,
   SiNextdotjs,
+  SiOpenai,
   SiReact,
   SiTailwindcss,
   SiTypescript,
@@ -24,20 +25,21 @@ export type ProjectProps = {
 export const projects = [
   {
     id: 0,
-    name: "Chat to PDF",
+    name: "Summaraize",
     description: "Transform Your PDFs into Interactive Conversations",
-    technologies: [SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, FaFire],
-    techNames: ["TypeScript", "React", "Next.js", "Tailwind CSS", "Firestore"],
+    technologies: [SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, FaFire, SiOpenai],
+    techNames: ["TypeScript", "React", "Next.js", "Tailwind CSS", "Firestore", "OpenAI"],
     techLinks: [
       "https://www.typescriptlang.org/",
       "https://reactjs.org/",
       "https://nextjs.org/",
       "https://tailwindcss.com/",
       "https://firebase.google.com/",
+      "https://openai.com/",
     ],
     // github: "https://github.com/symaticvisuals/deepanshu-goel-portfolio",
-    demo: "https://chat-with-pdf-challenge-deepanshu.vercel.app/",
-    image: "/projects/chattopdf.png",
+    demo: "https://summaraize.deepanshuweb.in/",
+    image: "/projects/image.png",
     available: true,
   },
   {
